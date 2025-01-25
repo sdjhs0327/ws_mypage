@@ -21,7 +21,7 @@ export const Contact = (props) => {
     console.log(name, email, message);
 
     {
-      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
+      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account  */
     }
 
     emailjs.sendForm('service_kt2ij5x', 'template_qgvd5gn', e.target, 'J2V0Cvf8S5QtpgWyU').then(
