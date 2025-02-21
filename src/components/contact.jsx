@@ -5,10 +5,11 @@ import React from 'react';
 const initialState = {
   name: '',
   email: '',
+  phone: '',
   message: '',
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, phone, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,7 +19,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(name, email, phone, message);
 
     {
       /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
@@ -27,6 +28,7 @@ export const Contact = (props) => {
     emailjs.sendForm('service_kt2ij5x', 'template_qgvd5gn', e.target, 'J2V0Cvf8S5QtpgWyU').then(
       (result) => {
         console.log(result.text);
+        alert("전송 완료!");
         clearState();
       },
       (error) => {
@@ -41,9 +43,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>CONTACT</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will get back to you as soon as possible.
+                  전화번호를 남겨주시면 48시간 내로 회신드리겠습니다.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -55,7 +57,7 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Name (예:홍길동)"
                         required
                         onChange={handleChange}
                       />
@@ -69,7 +71,7 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="Email (예:ninebros@naver.com)"
                         required
                         onChange={handleChange}
                       />
@@ -78,12 +80,23 @@ export const Contact = (props) => {
                   </div>
                 </div>
                 <div className="form-group">
+                  <input
+                    name="phone"
+                    id="phone"
+                    className="form-control"
+                    placeholder="Phone (예: 010-1234-5678)"
+                    pattern="^01[0-9]-\d{3,4}-\d{4}$"
+                    required
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="form-group">
                   <textarea
                     name="message"
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Message (예: 안녕하세요! 워크시트 요청합니다.)"
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -91,7 +104,7 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  보내기
                 </button>
               </form>
             </div>
@@ -128,18 +141,18 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
-                      <i className="fa fa-facebook"></i>
+                    <a href={props.data ? props.data.youtube : '/'} target="_blank">
+                      <i className="fa fa-brands fa-youtube"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href={props.data ? props.data.twitter : '/'}>
                       <i className="fa fa-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className="fa fa-youtube"></i>
+                    <a href={props.data ? props.data.blog : '/'} target="_blank">
+                      <i className="fa fa-solid fa-blog"></i>
                     </a>
                   </li>
                 </ul>
@@ -151,7 +164,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{' '}
+            &copy; 2025 Ninebros. Design by{' '}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>

@@ -1,12 +1,12 @@
 {
   "Header": {
     "title": "투자는 멘탈이다",
-    "paragraph": "안녕하세요. 투멘입니다."
+    "paragraph": "미국 주식, 시작하고 싶지만 막막하다면?"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": ["Lorem ipsum dolor", "Tempor incididunt", "Lorem ipsum dolor", "Incididunt ut labore"],
-    "Why2": ["Aliquip ex ea commodo", "Lorem ipsum dolor", "Exercitation ullamco", "Lorem ipsum dolor"]
+    "paragraph": "투자는 필수지만, 어디서부터 시작해야 할지 몰라 막막한 분들이 많습니다. 금융 교육을 받은 적도 없고, 전문가들은 믿기 어렵고, 가짜 정보는 넘쳐나죠. 결국, 많은 사람들이 감으로 투자하다가 손실을 보고, 시장을 떠납니다. 하지만 ‘언제, 무엇을 살까?’가 아니라 ‘어떤 기준으로 투자할 것인가?’가 더 중요합니다. 명확한 원칙만 있다면, 시장의 변동성에도 흔들리지 않는 투자자가 될 수 있습니다.",
+    "Why": ["시행착오는 너무 비쌉니다.", "남들과 나는 상황이 다릅니다.", "불안하면 실패합니다.", "트렌드를 따라가면 늦습니다."],
+    "Why2": ["처음부터 제대로 시작해야 합니다.", "나에게 맞는 전략을 세워야 합니다.", "확신을 가진 투자자가 되어야 합니다.", "본질에 집중해야 합니다."]
   },
   "Gallery": [
     {
@@ -57,34 +57,19 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-solid fa-file-pen",
+      "name": "금융 분석 클래스",
+      "text": "더 이상 감에 의존하지 마세요. 데이터를 읽고 해석하는 법, 📊투자 전략을 설계하고 검증하는 방법, 그리고 리스크는 줄이고 수익을 극대화하는 자산배분 전략까지 익힙니다. 단순한 이론이 아니라, 🚀실전에서 바로 적용할 수 있는 투자 스킬을 제공합니다."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-solid fa-bullseye",
+      "name": "투자 전략 컨설팅",
+      "text": "시장이 흔들려도, 📈포트폴리오는 흔들리지 않습니다. 투자 성향, 목표, 자산 규모를 분석해 맞춤형 포트폴리오를 설계합니다. 데이터 기반 최적의 자산배분 전략을 세우고, 변동성에도 흔들리지 않는 투자 원칙을 확립합니다. 단기 성과가 아니라, 🏆장기적으로 살아남을 수 있는 투자 시스템을 구축할 수 있도록 1:1 컨설팅을 제공합니다."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-solid fa-computer",
+      "name": "전략 프로그램",
+      "text": "🤖당신의 전략이 프로그램으로 구현됩니다. 시장 흐름을 분석하고, 자동으로 최적의 매매 타이밍을 잡을 수 있다면? 감이 아닌 ⚖️알고리즘으로 투자 전략을 자동화하세요. 백테스트, 포트폴리오 최적화, 위험 관리 시스템, AI까지 맞춤 개발해드립니다. 반복적인 분석과 의사결정을 효율적으로 자동화하세요."
     }
   ],
   "Testimonials": [
@@ -137,12 +122,13 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "서울특별시 강남구 언주로",
     "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "email": "ninebros@naver.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "youtube": "https:www.youtube.com/@tomantic",
+    "blog": "https://blog.naver.com/thuglife17"
   },
   "Features": [
     {

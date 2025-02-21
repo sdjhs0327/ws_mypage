@@ -288,7 +288,15 @@ header .intro-text {
   list-style: none;
   padding: 0;
 }
-#about .about-text li:before {
+#about .about-text .col-lg-6:first-child ul li:before {
+  content: '\f00d';
+  font-family: 'FontAwesome';
+  color: red;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about .about-text .col-lg-6:last-child ul li:before {
   content: '\f00c';
   font-family: 'FontAwesome';
   color: #5ca9fb;

@@ -5,10 +5,9 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>투자는 전략이다</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            우리는 감이 아닌 데이터로, 유행이 아닌 전략으로 흔들리지 않는 투자 전략을 만듭니다.
           </p>
         </div>
         <div className="row">
