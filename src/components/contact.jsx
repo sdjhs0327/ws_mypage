@@ -59,6 +59,8 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Name (예:홍길동)"
                         required
+                        onInvalid={(e) => e.target.setCustomValidity("이름을 입력해주세요. (예: 홍길동)")}
+                        onInput={(e) => e.target.setCustomValidity("")} // 입력 시 기본 메시지 초기화
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -72,7 +74,7 @@ export const Contact = (props) => {
                         name="email"
                         className="form-control"
                         placeholder="Email (예:ninebros@naver.com)"
-                        required
+                        // required
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -87,7 +89,23 @@ export const Contact = (props) => {
                     placeholder="Phone (예: 010-1234-5678)"
                     pattern="^01[0-9]-\d{3,4}-\d{4}$"
                     required
-                    onChange={handleChange}
+                    onInvalid={(e) => e.target.setCustomValidity("전화번호를 입력해주세요. (예: 010-1234-5678)")}
+                    onInput={(e) => e.target.setCustomValidity("")} // 입력 시 기본 메시지 초기화
+                    maxLength="13" // 최대 길이 설정 (하이픈 포함)
+                    onChange={(e) => {
+                      let value = e.target.value.replace(/\D/g, ""); // 숫자만 남기기
+                      let formattedValue = "";
+                  
+                      if (value.length > 3 && value.length <= 7) {
+                        formattedValue = value.replace(/^(\d{3})(\d{0,4})$/, "$1-$2");
+                      } else if (value.length > 7) {
+                        formattedValue = value.replace(/^(\d{3})(\d{3,4})(\d{0,4})$/, "$1-$2-$3");
+                      } else {
+                        formattedValue = value;
+                      }
+                  
+                      e.target.value = formattedValue;
+                    }}
                   />
                 </div>
                 <div className="form-group">
@@ -97,7 +115,7 @@ export const Contact = (props) => {
                     className="form-control"
                     rows="4"
                     placeholder="Message (예: 안녕하세요! 워크시트 요청합니다.)"
-                    required
+                    // required
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>

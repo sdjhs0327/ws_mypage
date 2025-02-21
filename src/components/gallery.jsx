@@ -6,10 +6,9 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>데이터 분석</h2>
+          <h2>투자 인사이트</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            시장 변동성 속에서도 흔들리지 않는 투자, 데이터가 답을 알려줍니다.
           </p>
         </div>
         <div className="row">
